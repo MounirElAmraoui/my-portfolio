@@ -80,18 +80,13 @@ const Profile = () => {
             <div className="profile__timeline">
               <div className="profile__timeline-item">
                 <div className="profile__timeline-marker"></div>
-                <div className="profile__timeline-content">
-                  <span className="profile__timeline-date">2021 - Présent</span>
-                  <h4>Cycle d'Ingénieur - Génie Informatique</h4>
-                  <p>Formation approfondie en développement logiciel, systèmes d'information et architecture des ordinateurs.</p>
-                </div>
               </div>
               <div className="profile__timeline-item">
                 <div className="profile__timeline-marker"></div>
                 <div className="profile__timeline-content">
                   <span className="profile__timeline-date">2019 - 2021</span>
-                  <h4>Classes Préparatoires aux Grandes Écoles</h4>
-                  <p>CPGE MPSI/MP - Fondamentaux scientifiques rigoureux et méthodologie de travail.</p>
+                  <h4>Classes Préparatoires intégré de l'ENSAT</h4>
+                  <p> Fondamentaux scientifiques rigoureux et méthodologie de travail.</p>
                 </div>
               </div>
               <div className="profile__timeline-item">
@@ -99,7 +94,7 @@ const Profile = () => {
                 <div className="profile__timeline-content">
                   <span className="profile__timeline-date">2019</span>
                   <h4>Baccalauréat Scientifique</h4>
-                  <p>Mention Très Bien - Spécialité Mathématiques</p>
+                  <p>Mention Très Bien - Spécialité science physique en bnou Zaydoun </p>
                 </div>
               </div>
             </div>
@@ -124,11 +119,6 @@ const Profile = () => {
                 <div className="profile__interest-icon">📚</div>
                 <h4>Veille Technologique</h4>
                 <p>Toujours à l'affût des dernières innovations et bonnes pratiques</p>
-              </div>
-              <div className="profile__interest-card">
-                <div className="profile__interest-icon">🏃</div>
-                <h4>Sport & Bien-être</h4>
-                <p>Course à pied et musculation pour maintenir l'équilibre corps-esprit</p>
               </div>
             </div>
           </div>

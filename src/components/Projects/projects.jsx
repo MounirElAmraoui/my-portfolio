@@ -12,12 +12,12 @@ const Projects = () => {
       title: "Engineering Career Club",
       category: "web",
       description: "Plateforme complète développée pour présenter un club universitaire dédié au développement professionnel. Le site permet de découvrir les formations, conférences et programmes d'accompagnement carrière proposés aux étudiants en ingénierie.",
-      technologies: ["React.js", "Tailwind CSS", "Framer Motion", "Responsive Design"],
+      technologies: ["React.js"],
       github: "https://github.com/MounirElAmraoui",
-      demo: "#",
+      demo: "https://www.linkedin.com/feed/update/urn:li:activity:7431387412737527808/?originTrackingId=GBHRkoqvcbn4f%2FOexBGpnw%3D%3D",
       image: "career",
       featured: true,
-      stats: { views: "1.2k", likes: 45 }
+      stats: { views: "", likes: 41 }
     },
     {
       id: 2,

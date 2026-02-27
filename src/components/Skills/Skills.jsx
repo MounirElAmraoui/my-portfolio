@@ -11,11 +11,11 @@ const Skills = () => {
       icon: <Code size={24} />,
       color: "#3b82f6",
       skills: [
-        { name: "React.js", level: 85, description: "Hooks, Context, Redux Toolkit" },
-        { name: "JavaScript (ES6+)", level: 90, description: "Async/Await, Modules, DOM" },
+        { name: "React.js", level: 65, description: "Hooks, Context, Redux Toolkit" },
+        { name: "JavaScript ", level: 90, description: "Async/Await, Modules, DOM" },
         { name: "HTML5 / CSS3", level: 92, description: "Sémantique, Flexbox, Grid" },
-        { name: "Tailwind CSS", level: 88, description: "Responsive, Custom config" },
-        { name: "TypeScript", level: 70, description: "Types, Interfaces, Generics" }
+        { name: "TypeScript", level: 70, description: "Types, Interfaces, Generics" },
+        { name:'botstrap ' , level :75 }
       ]
     },
     {
@@ -23,10 +23,11 @@ const Skills = () => {
       icon: <Server size={24} />,
       color: "#8b5cf6",
       skills: [
-        { name: "Node.js", level: 75, description: "Express, API REST" },
         { name: "Python", level: 80, description: "Scripts, Data processing" },
-        { name: "SQL", level: 78, description: "MySQL, PostgreSQL" },
-        { name: "MongoDB", level: 65, description: "NoSQL, Mongoose" }
+        { name: "JavaScript ", level: 90, description: "" },
+        { name: "C ", level: 80, description: "" },
+
+
       ]
     },
     {
@@ -36,8 +37,8 @@ const Skills = () => {
       skills: [
         { name: "Git & GitHub", level: 88, description: "Workflow, CI/CD basics" },
         { name: "VS Code", level: 95, description: "Extensions, Debugging" },
-        { name: "Docker", level: 60, description: "Containers, Images" },
-        { name: "Figma", level: 75, description: "UI Design, Prototypage" }
+        { name: "jupyter", level: 75, description: "supervised ,unsupervised learning" }
+
       ]
     },
     {
@@ -45,10 +46,10 @@ const Skills = () => {
       icon: <Palette size={24} />,
       color: "#ec4899",
       skills: [
-        { name: "Résolution de problèmes", level: 90 },
+        { name: "Résolution de problèmes", level: 82 },
         { name: "Travail en équipe", level: 88 },
-        { name: "Communication", level: 85 },
-        { name: "Gestion du temps", level: 82 }
+        { name: "Communication", level: 75 },
+        { name: "Gestion du temps", level: 85 }
       ]
     }
   ];
@@ -119,10 +120,8 @@ const Skills = () => {
           <div className="skills__learning">
             <h4>En cours d'apprentissage</h4>
             <div className="skills__learning-tags">
-              <span className="skills__learning-tag">Next.js</span>
-              <span className="skills__learning-tag">GraphQL</span>
-              <span className="skills__learning-tag">AWS</span>
-              <span className="skills__learning-tag">Three.js</span>
+              <span className="skills__learning-tag">java </span>
+              
             </div>
           </div>
         </div>
