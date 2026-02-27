@@ -2,6 +2,7 @@ import React from 'react'
 import { Github, Linkedin, Mail, Heart, ArrowUp } from 'lucide-react'
 import './footer.css'
 
+
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 

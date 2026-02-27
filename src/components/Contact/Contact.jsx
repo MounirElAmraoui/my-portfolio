@@ -22,6 +22,10 @@ const Contact = () => {
       setFormData({ name: '', email: '', subject: '', message: '' });
       setTimeout(() => setSubmitted(false), 3000);
     }, 1500);
+  const mailtoLink = `mailto:tonemail@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
+    `Nom: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
+  )}`;
+
   };
 
   const handleChange = (e) => {
@@ -157,6 +161,7 @@ const Contact = () => {
                     required
                   />
                 </div>
+
 
                 <div className="contact__form-group">
                   <label htmlFor="message">Message</label>

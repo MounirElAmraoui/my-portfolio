@@ -29,16 +29,18 @@
 }
 
 .contact__cards {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
   margin-bottom: 2rem;
 }
 
 .contact__card {
+  margin: auto;
   display: flex;
   align-items: center;
   gap: 1rem;
+  min-width: 400px;
   padding: 1.25rem;
   background: var(--color-bg-card);
   border: 1px solid var(--color-border);
