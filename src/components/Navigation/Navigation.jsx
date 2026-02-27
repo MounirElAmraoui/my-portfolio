@@ -37,6 +37,7 @@ const Navigation = () => {
     { name: 'Projets', href: '#projects', id: 'projects' },
     { name: 'Formation', href: '#education', id: 'education' },
     { name: 'Contact', href: '#contact', id: 'contact' },
+    { name: 'mounir' , href: '#mounir' , id: 'mounir'}
   ]
 
   const handleNavClick = (e, href) => {

@@ -10,6 +10,8 @@ import Experience from './components/Experience/Experience'
 import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
 
+
+
 function App() {
   useEffect(() => {
     // Intersection Observer pour les animations au scroll
@@ -55,6 +57,7 @@ function App() {
         <Contact />
       </main>
       <Footer />
+      
     </div>
   )
 }
