@@ -24,7 +24,7 @@ const Footer = () => {
 
           <div className="footer__links">
             <div className="footer__section">
-              <h4>Navigation</h4>
+              <h4 className='Reseau'>Navigation</h4>
               <ul>
                 <li><a href="#hero">Accueil</a></li>
                 <li><a href="#profile">Profil</a></li>
@@ -33,18 +33,10 @@ const Footer = () => {
                 <li><a href="#projects">Projets</a></li>
               </ul>
             </div>
-
-            <div className="footer__section">
-              <h4>Contact</h4>
-              <ul>
-                <li><a href="mailto:mounir.el.amraoui186@gmail.com">Email</a></li>
-                <li><a href="tel:+212635505518">Téléphone</a></li>
-                <li><a href="#contact">Formulaire</a></li>
-              </ul>
             </div>
 
-            <div className="footer__section">
-              <h4>Réseaux</h4>
+            <div className="footer_section ">
+              <h4 className='Reseau'>Réseaux</h4>
               <div className="footer__social">
                 <a href="https://github.com/MounirElAmraoui" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                   <Github size={20} />
@@ -57,7 +49,6 @@ const Footer = () => {
                 </a>
               </div>
             </div>
-          </div>
         </div>
 
         <div className="footer__bottom">
