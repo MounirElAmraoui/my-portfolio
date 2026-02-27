@@ -17,10 +17,8 @@ const Experience = () => {
   ];
 
   const opportunities = [
-    "Stage de fin d'études (4-6 mois)",
-    "Alternance en développement web",
-    "Projet freelance",
-    "Collaboration open source"
+    "Stage de observation (1-2)",
+    
   ];
 
   return (

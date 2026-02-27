@@ -19,42 +19,8 @@ const Projects = () => {
       featured: true,
       stats: { views: "", likes: 41 }
     },
-    {
-      id: 2,
-      title: "TaskMaster Pro",
-      category: "app",
-      description: "Application de gestion de tâches avec tableau Kanban, drag & drop, et synchronisation en temps réel. Interface intuitive et animations fluides pour une expérience utilisateur optimale.",
-      technologies: ["React", "Node.js", "Socket.io", "MongoDB"],
-      github: "https://github.com/MounirElAmraoui",
-      demo: "#",
-      image: "task",
-      featured: false,
-      stats: { views: "800", likes: 32 }
-    },
-    {
-      id: 3,
-      title: "DataViz Dashboard",
-      category: "data",
-      description: "Tableau de bord interactif pour la visualisation de données complexes. Graphiques dynamiques, filtres avancés et export de rapports en temps réel.",
-      technologies: ["React", "D3.js", "Python", "FastAPI"],
-      github: "https://github.com/MounirElAmraoui",
-      demo: "#",
-      image: "data",
-      featured: false,
-      stats: { views: "600", likes: 28 }
-    },
-    {
-      id: 4,
-      title: "Projet à venir",
-      category: "web",
-      description: "Espace réservé pour un futur projet innovant. En cours de développement... Suivez mon GitHub pour être tenu au courant !",
-      technologies: ["À déterminer"],
-      github: "#",
-      demo: "#",
-      image: "placeholder",
-      comingSoon: true,
-      featured: false
-    }
+    
+    
   ];
 
   const filters = [

@@ -4,42 +4,31 @@ import './Education.css'
 
 const Education = () => {
   const educations = [
+    
     {
-      degree: "Diplôme d'Ingénieur - Génie Informatique",
-      school: "École Nationale des Sciences Appliquées",
-      location: "Maroc",
-      period: "2021 - Présent",
-      status: "En cours",
-      description: "Formation d'excellence couvrant le développement logiciel, l'architecture des systèmes d'information, l'intelligence artificielle et la cybersécurité.",
-      achievements: ["Major de promotion", "Projet de fin d'études en cours"],
-      color: "#3b82f6"
-    },
-    {
-      degree: "Classes Préparatoires aux Grandes Écoles",
-      school: "Lycée Mohammed VI",
-      location: "Maroc",
-      period: "2019 - 2021",
-      status: "Terminé",
-      description: "CPGE MPSI/MP - Fondamentaux scientifiques rigoureux, méthodologie analytique et capacité de travail intensive.",
+      degree: "Classes Préparatoires a ENSAT",
+      school: "école national des sciences appliqués de tanger ",
+      location: "Maroc/Tanger ",
+      period: "2024/2026",
+      status: "encour",
+      description: " Fondamentaux scientifiques rigoureux, méthodologie analytique et capacité de travail intensive.",
       achievements: ["Admis aux concours nationaux", "Mention Très Bien au bac"],
       color: "#8b5cf6"
     },
     {
       degree: "Baccalauréat Scientifique",
-      school: "Lycée Qualifiant",
-      location: "Maroc",
-      period: "2019",
+      school: "Lycée Bnou Zaydoun ",
+      location: "Maroc /Taza",
+      period: "2023/2024",
       status: "Terminé",
-      description: "Spécialité Mathématiques avec option Sciences de l'Ingénieur.",
-      achievements: ["Mention Très Bien", "Major de la région"],
+      description: "Spécialité physique avec option Sciences de l'Ingénieur.",
+      achievements: ["Mention Très Bien", "parmie les majors de la région"],
       color: "#ec4899"
     }
   ];
 
   const certifications = [
-    { name: "React - The Complete Guide", issuer: "Udemy", year: "2024" },
-    { name: "JavaScript Algorithms", issuer: "freeCodeCamp", year: "2023" },
-    { name: "AWS Cloud Practitioner", issuer: "Amazon Web Services", year: "2024" }
+    //{ name: "", issuer: "", year: "" },
   ];
 
   return (
@@ -104,7 +93,7 @@ const Education = () => {
             </div>
 
             <div className="education__sidebar">
-              <h4>Certifications</h4>
+            <h4></h4> 
               <div className="education__certs">
                 {certifications.map((cert, idx) => (
                   <div key={idx} className="education__cert">
