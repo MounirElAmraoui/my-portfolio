@@ -15,17 +15,25 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    // Simulation d'envoi
+    
+    // Création du lien mailto avec les données du formulaire
+    const subject = encodeURIComponent(formData.subject || "Nouveau message de contact");
+    const body = encodeURIComponent(
+      `Nom: ${formData.name}\n` +
+      `Email: ${formData.email}\n\n` +
+      `Message:\n${formData.message}`
+    );
+    
+    // Redirection vers le client mail par défaut
+    window.location.href = `mailto:mounir.el.amraoui186@gmail.com?subject=${subject}&body=${body}`;
+    
+    // Simulation d'envoi pour l'interface
     setTimeout(() => {
       setIsSubmitting(false);
       setSubmitted(true);
       setFormData({ name: '', email: '', subject: '', message: '' });
       setTimeout(() => setSubmitted(false), 3000);
     }, 1500);
-  const mailtoLink = `mailto:tonemail@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
-    `Nom: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
-  )}`;
-
   };
 
   const handleChange = (e) => {
@@ -161,7 +169,6 @@ const Contact = () => {
                     required
                   />
                 </div>
-
 
                 <div className="contact__form-group">
                   <label htmlFor="message">Message</label>
