@@ -1,0 +1,221 @@
+.education {
+  padding: 6rem 0;
+  background: var(--color-bg-secondary);
+  position: relative;
+}
+
+.education__content {
+  display: grid;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+@media (min-width: 1024px) {
+  .education__content {
+    grid-template-columns: 1fr 350px;
+  }
+}
+
+.education__main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.education__item {
+  display: flex;
+  gap: 1.5rem;
+  position: relative;
+}
+
+.education__timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1.5rem;
+}
+
+.education__timeline-dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--edu-color);
+  border: 3px solid var(--color-bg-secondary);
+  box-shadow: 0 0 0 3px var(--edu-color);
+  z-index: 2;
+  flex-shrink: 0;
+}
+
+.education__timeline-line {
+  width: 2px;
+  flex: 1;
+  background: linear-gradient(to bottom, var(--edu-color), transparent);
+  margin-top: 0.5rem;
+  min-height: 40px;
+}
+
+.education__card {
+  flex: 1;
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: 1.5rem;
+  transition: all var(--transition-normal);
+  border-left: 4px solid var(--edu-color);
+}
+
+.education__card:hover {
+  transform: translateX(10px);
+  border-color: var(--color-border-hover);
+  box-shadow: var(--shadow-glow);
+}
+
+.education__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.education__icon {
+  width: 48px;
+  height: 48px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--edu-color);
+}
+
+.education__meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+
+.education__status {
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.education__status--current {
+  background: rgba(59, 130, 246, 0.2);
+  color: var(--color-blue-light);
+}
+
+.education__status--past {
+  background: rgba(148, 163, 184, 0.2);
+  color: var(--color-text-secondary);
+}
+
+.education__period {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+}
+
+.education__degree {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.education__school {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  color: var(--color-text-secondary);
+  font-size: 0.9375rem;
+  margin-bottom: 1rem;
+}
+
+.education__description {
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  font-size: 0.9375rem;
+}
+
+.education__achievements {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.education__achievement {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.375rem 0.75rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: var(--radius-full);
+  font-size: 0.8125rem;
+  color: var(--color-text-secondary);
+}
+
+.education__sidebar {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: 1.5rem;
+  height: fit-content;
+}
+
+.education__sidebar h4 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.education__certs {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.education__cert {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: var(--radius-lg);
+  transition: all var(--transition-fast);
+}
+
+.education__cert:hover {
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateX(5px);
+}
+
+.education__cert-icon {
+  font-size: 1.5rem;
+}
+
+.education__cert-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.education__cert-name {
+  font-weight: 600;
+  color: var(--color-text-primary);
+  font-size: 0.9375rem;
+}
+
+.education__cert-issuer {
+  font-size: 0.8125rem;
+  color: var(--color-text-muted);
+}
