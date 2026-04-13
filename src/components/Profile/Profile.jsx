@@ -146,7 +146,7 @@ const Profile = () => {
               <div className="profile__avatar-container">
                 <div className="profile__avatar">
                   <div className="profile__avatar-ring">
-                  <img id="profile " src="https://media.licdn.com/dms/image/v2/D5603AQG6I2SJYqbKtQ/profile-displayphoto-scale_400_400/B56Zwesln.HAAg-/0/1770041532486?e=1773878400&v=beta&t=V8kZp6GDAI6b9RrxKviedR5kQJY8mxP5gTHq62JF7hg" alt="Profile" />
+                  <img id="profile " src="https://media.licdn.com/dms/image/v2/D5603AQG6I2SJYqbKtQ/profile-displayphoto-scale_200_200/B56Zwesln.HAAY-/0/1770041532486?e=1777507200&v=beta&t=NViFfrSr6teZHzABpzNd8tud7-HXwPlCD6kPaHXd8nw" alt="Profile" />
                   </div>
                 </div>
                 <div className="profile__badge-verified">✓</div>

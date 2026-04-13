@@ -13,8 +13,8 @@ const Projects = () => {
       category: "web",
       description: "Plateforme complète développée pour présenter un club universitaire dédié au développement professionnel. Le site permet de découvrir les formations, conférences et programmes d'accompagnement carrière proposés aux étudiants en ingénierie.",
       technologies: ["React.js"],
-      github: "https://github.com/MounirElAmraoui",
-      demo: "https://www.linkedin.com/feed/update/urn:li:activity:7431387412737527808/?originTrackingId=GBHRkoqvcbn4f%2FOexBGpnw%3D%3D",
+      github: "https://github.com/MounirElAmraoui/engineer.career.club-",
+      demo: "https://egineering-career-club.netlify.app/",
       image: "career",
       featured: true,
       stats: { views: "", likes: 41 }

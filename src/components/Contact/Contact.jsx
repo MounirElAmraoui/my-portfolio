@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Mail, Phone, Linkedin, Github, Send, MapPin, Clock } from 'lucide-react'
 import './Contact.css'
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const [formData, setFormData] = useState({

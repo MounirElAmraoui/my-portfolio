@@ -111,7 +111,7 @@ const Hero = () => {
         <div className="hero__tech-stack animate-fade-in-up delay-700">
           <span className="hero__tech-label">Tech Stack</span>
           <div className="hero__tech-icons">
-            {['React', 'Node.js', 'TypeScript', 'Python'].map((tech, i) => (
+            {['React', 'Node.js', 'JavaScript', 'Python'].map((tech, i) => (
               <span key={tech} className="hero__tech-item" style={{ animationDelay: `${0.8 + i * 0.1}s` }}>
                 {tech}
               </span>
