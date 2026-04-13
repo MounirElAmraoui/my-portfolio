@@ -14,13 +14,23 @@ const Projects = () => {
       description: "Plateforme complète développée pour présenter un club universitaire dédié au développement professionnel. Le site permet de découvrir les formations, conférences et programmes d'accompagnement carrière proposés aux étudiants en ingénierie.",
       technologies: ["React.js"],
       github: "https://github.com/MounirElAmraoui/engineer.career.club-",
-      demo: "https://egineering-career-club.netlify.app/",
-      image: "career",
+      demo: "https://caffee-web-site-gsnw-git-main-mounirelamraouis-projects.vercel.app/",
+      image: "https://media.licdn.com/dms/image/v2/D4E22AQHTek4dN72Iwg/feedshare-shrink_800/B4EZyGXd.lH8Ag-/0/1771780825367?e=1777507200&v=beta&t=kBYJWq5tOe0jsCQ1cGfPNW66j3ZWj9H4Yg7cKUXCef8",
       featured: true,
-      stats: { views: "", likes: 41 }
+      stats: { views: "100", likes: 60 }
     },
-    
-    
+    {
+      id: 2,
+      title: "caffe website",
+      category: "web",
+      description: "Site web de présentation d'un café, mettant en avant son ambiance chaleureuse, son menu varié et ses événements spéciaux. Conçu pour attirer les clients locaux et les touristes à la recherche d'une expérience unique.",
+      technologies: ["HTML", "CSS", "JavaScript"],
+      demo: "https://caffe-website.netlify.app/",
+      image: "https://media.licdn.com/dms/image/v2/D4D22AQH81iLiIhyA4Q/feedshare-shrink_800/B4DZxN9yFIGkAg-/0/1770834567759?e=1777507200&v=beta&t=NQL2nKlRJ55hDBVgb_7hyhXmq54-W5YTjr_TxYrC_uc",
+      featured: true,
+      github: "https://github.com/MounirElAmraoui/caffee-web-site",
+      stats: { views: "60", likes: 41 }
+    }
   ];
 
   const filters = [
@@ -70,7 +80,7 @@ const Projects = () => {
                 style={{ animationDelay: `${idx * 0.1}s` }}
               >
                 <div className="projects__image">
-                  <div className="projects__pattern"></div>
+                  <div className="projects__pattern"><img src={project.image} alt={project.title} /></div>
                   {project.comingSoon ? (
                     <Cpu size={48} className="projects__icon projects__icon--muted" />
                   ) : (

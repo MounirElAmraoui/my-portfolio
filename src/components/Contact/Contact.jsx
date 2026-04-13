@@ -10,31 +10,37 @@ const Contact = () => {
     subject: '',
     message: ''
   });
+
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Création du lien mailto avec les données du formulaire
-    const subject = encodeURIComponent(formData.subject || "Nouveau message de contact");
-    const body = encodeURIComponent(
-      `Nom: ${formData.name}\n` +
-      `Email: ${formData.email}\n\n` +
-      `Message:\n${formData.message}`
-    );
-    
-    // Redirection vers le client mail par défaut
-    window.location.href = `mailto:mounir.el.amraoui186@gmail.com?subject=${subject}&body=${body}`;
-    
-    // Simulation d'envoi pour l'interface
-    setTimeout(() => {
-      setIsSubmitting(false);
+
+    emailjs.send(
+      "service_bjr6wdc",          // ✅ TON Service ID
+      "template_1zz6wu9",         // ⚠️ METTRE TON Template ID
+      {
+        name: formData.name,
+        email: formData.email,
+        subject: formData.subject, 
+        message: formData.message,
+      },
+      "W3jfxBjhuiyIEunFe"           // ⚠️ METTRE TA Public Key
+    )
+    .then(() => {
       setSubmitted(true);
+      setIsSubmitting(false);
       setFormData({ name: '', email: '', subject: '', message: '' });
+
       setTimeout(() => setSubmitted(false), 3000);
-    }, 1500);
+    })
+    .catch((error) => {
+      console.error("Erreur EmailJS:", error);
+      setIsSubmitting(false);
+    });
+    console.log("Formulaire soumis:", formData);
   };
 
   const handleChange = (e) => {
@@ -144,6 +150,7 @@ const Contact = () => {
                       required
                     />
                   </div>
+
                   <div className="contact__form-group">
                     <label htmlFor="email">Email</label>
                     <input
@@ -192,7 +199,7 @@ const Contact = () => {
                   {isSubmitting ? (
                     <span className="contact__spinner"></span>
                   ) : submitted ? (
-                    <>Message envoyé !</>
+                    <>Message envoyé ! ✅</>
                   ) : (
                     <>
                       <Send size={18} />
@@ -202,6 +209,7 @@ const Contact = () => {
                 </button>
               </form>
             </div>
+
           </div>
         </div>
       </div>
