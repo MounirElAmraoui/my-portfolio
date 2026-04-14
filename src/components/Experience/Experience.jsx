@@ -1,6 +1,6 @@
 import React from 'react'
 import { Briefcase, Clock, MapPin, Calendar } from 'lucide-react'
-import './Experience.css'
+import './experience.css'
 
 const Experience = () => {
   const experiences = [

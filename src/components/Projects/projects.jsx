@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Github, ExternalLink, Globe, Cpu, Layers } from 'lucide-react'
-import './Projects.css'
+import './projects.css'
 
 const Projects = () => {
   const [filter, setFilter] = useState('all');

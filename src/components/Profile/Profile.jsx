@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { MapPin, Calendar, Mail, Download, User, Briefcase, GraduationCap, Heart } from 'lucide-react'
-import './Profile.css'
+import './profile.css'
 
 const Profile = () => {
   const [activeTab, setActiveTab] = useState('overview');

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Menu, X, Code2 } from 'lucide-react'
-import './Navigation.css'
+import './navigation.css'
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false)

@@ -157,3 +157,57 @@
   color: var(--color-text-secondary);
   line-height: 1.6;
 }
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .about {
+    padding: 4rem 0;
+  }
+
+  .about__content {
+    gap: 2rem;
+  }
+
+  .about__text {
+    text-align: center;
+  }
+
+  .about__intro p {
+    font-size: 1rem;
+  }
+
+  .about__strengths {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .about__strength-card {
+    padding: 1.25rem;
+    text-align: center;
+  }
+
+  .about__strength-icon {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 1rem;
+  }
+
+  .about__strength-card h3 {
+    font-size: 1rem;
+  }
+
+  .about__strength-card p {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about__strength-card {
+    padding: 1rem;
+  }
+
+  .about__strength-icon {
+    width: 45px;
+    height: 45px;
+  }
+}

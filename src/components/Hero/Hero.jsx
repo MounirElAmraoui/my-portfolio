@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Code, Mail, ChevronDown, Sparkles } from 'lucide-react'
-import './Hero.css'
+import './hero.css'
 
 const Hero = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });

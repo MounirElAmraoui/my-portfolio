@@ -1,6 +1,6 @@
 import React from 'react'
 import { GraduationCap, Award, Calendar, MapPin } from 'lucide-react'
-import './Education.css'
+import './education.css'
 
 const Education = () => {
   const educations = [

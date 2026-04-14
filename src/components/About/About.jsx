@@ -1,6 +1,6 @@
 import React from 'react'
 import { Target, Lightbulb, Rocket, Code2 } from 'lucide-react'
-import './About.css'
+import './about.css'
 
 const About = () => {
   const strengths = [
