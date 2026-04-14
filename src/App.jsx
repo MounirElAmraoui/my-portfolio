@@ -1,14 +1,14 @@
 import React, { useEffect } from 'react'
-import Navigation from './components/navigation/Navigation'
-import Hero from './components/hero/Hero'
-import Profile from './components/profile/Profile'
-import About from './components/about/About'
-import Skills from './components/skills/Skills'
-import Projects from "./components/projects/Projects";
-import Education from './components/education/Education'
-import Experience from './components/experience/Experience'
-import Contact from "./components/contact/Contact";
-import Footer from "./components/footer/Footer";
+import Navigation from './components/navigation/navigation'
+import Hero from './components/hero/hero'
+import Profile from './components/profile/profile'
+import About from './components/about/about'
+import Skills from './components/skills/skills'
+import Projects from "./components/projects/projects";
+import Education from './components/education/education'
+import Experience from './components/experience/experience'
+import Contact from "./components/contact/contact";
+import Footer from "./components/footer/footer";
 
 
 function App() {
